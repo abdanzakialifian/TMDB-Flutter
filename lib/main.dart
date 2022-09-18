@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movies/home/home_page.dart';
+import 'package:movies/splash_screen/splash_screen.dart';
 
 void main() => runApp(const MoviesApp());
 
@@ -11,7 +11,7 @@ class MoviesApp extends StatelessWidget {
     return const MaterialApp(
       title: "Movies App",
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: SplashScreen(),
     );
   }
 }

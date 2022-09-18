@@ -9,13 +9,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -212,7 +210,7 @@ class HomePage extends StatelessWidget {
                 height: 20,
               ),
               SizedBox(
-                height: 260,
+                height: 280,
                 child: ListView.separated(
                   padding: const EdgeInsets.symmetric(horizontal: 17),
                   shrinkWrap: true,
@@ -276,9 +274,6 @@ class HomePage extends StatelessWidget {
                   },
                 ),
               ),
-              const SizedBox(
-                height: 30,
-              ),
               const Padding(
                 padding: EdgeInsets.only(left: 17),
                 child: Text(
@@ -290,8 +285,9 @@ class HomePage extends StatelessWidget {
                 height: 20,
               ),
               SizedBox(
-                height: 260,
+                height: 280,
                 child: ListView.separated(
+                  shrinkWrap: true,
                   padding: const EdgeInsets.symmetric(horizontal: 17),
                   scrollDirection: Axis.horizontal,
                   separatorBuilder: (context, index) => const SizedBox(

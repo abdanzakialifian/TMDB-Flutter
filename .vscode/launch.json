@@ -5,19 +5,19 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Movies",
+      "name": "movies",
       "request": "launch",
       "type": "dart",
-      "program": "lib/main/main.dart"
+      "program": "lib/main.dart"
     },
     {
-      "name": "Movies (profile mode)",
+      "name": "movies (profile mode)",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile"
     },
     {
-      "name": "Movies (release mode)",
+      "name": "movies (release mode)",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release"
